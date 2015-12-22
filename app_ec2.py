@@ -11,9 +11,12 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-	high = tab.find({'fraud_prob': {'$gt': 0.5}}).count()
-	medium = tab.find({'fraud_prob': {'$lte': 0.5, '$gt': 0.0}}).count()
-	low = tab.find({'fraud_prob': 0.0}).count()
+	# high = tab.find({'fraud_prob': {'$gt': 0.5}}).count()
+	# medium = tab.find({'fraud_prob': {'$lte': 0.5, '$gt': 0.0}}).count()
+	# low = tab.find({'fraud_prob': 0.0}).count()
+	high_var = 25
+	med_var = 40
+	low_var = 300
 	return render_template('index.html', high_var = high, med_var = medium, low_var = low)
 
 @app.route('/high_risk')
