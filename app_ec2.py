@@ -57,4 +57,4 @@ if __name__ == '__main__':
     with open('data/random_forest.pkl') as f:
         rf_top = pickle.load(f)
     df = pd.read_json('example.json')
-    app.run(host='52.23.249.11', port=7777, debug=True)
+    app.run(host='0.0.0.0', port=7777, debug=True)
