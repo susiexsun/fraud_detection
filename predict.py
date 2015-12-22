@@ -6,12 +6,17 @@ import cPickle as pickle
 from pymongo import MongoClient
 
 
-def predict(data):
-    df = pd.read_json(data)
+def predict(model, data):
+    #df = pd.read_json(data)
+    df = pd.DataFrame([data])
     X_top = dp.process_data(df)
-    with open('data/random_forest.pkl') as f:
-        rf_top = pickle.load(f)
-    y_pred = rf_top.predict_proba(X_top)
+    # with open('data/random_forest.pkl') as f:
+    #     rf_top = pickle.load(f)
+
+    # Using unpickled model to predict on new new data
+    y_pred = model.predict_proba(X_top)
+
+    # Adds new column in df with predicted probability of fraud
     df['fraud_prob'] = y_pred[:,1]
     return df
 

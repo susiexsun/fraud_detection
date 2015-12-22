@@ -1,0 +1,3 @@
+{% for item in var_list %}
+    {{item}}
+{% endfor %}

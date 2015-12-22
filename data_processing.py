@@ -17,10 +17,16 @@ from sklearn.neighbors import KNeighborsClassifier
 import datetime
 
 # Taken from the pickled random forest model feature importance
-top_features = ['object_id', 'CHECK', 'body_length', 'event_published', 'has_logo',
-                'user_created', 'venue_longitude', 'gts', 'GBP', 'org_twitter',
-                'org_facebook', 'num_order', 'sus_domain', 'user_age', 'sale_duration',
-                'sale_duration2', 'BLANK', 'delivery_method','user_type', 'len_pp']
+# top_features = ['object_id', 'CHECK', 'body_length', 'event_published', 'has_logo',
+#                 'user_created', 'venue_longitude', 'gts', 'GBP', 'org_twitter',
+#                 'org_facebook', 'num_order', 'sus_domain', 'user_age', 'sale_duration',
+#                 'sale_duration2', 'BLANK', 'delivery_method','user_type', 'len_pp']
+
+
+top_features = ['event_published', 'len_tt','len_desc', 'delivery_method', 'GBP',
+               'venue_latitude', 'venue_longitude', 'num_payouts','user_created',
+               'has_logo', 'org_facebook', 'gts', 'num_order', 'sale_duration',
+               'user_age', 'sale_duration2', 'BLANK', 'sus_domain', 'user_type', 'len_pp']
 
 def convert_unix_timestamp(df, column_name):
     df[column_name] = df[column_name].map(lambda x: datetime.datetime.fromtimestamp(x).strftime('%Y-%m-%d %H:%M:%S'))
@@ -108,19 +114,23 @@ def process_data(df):
     #convert_unix_timestamp(df, 'event_published')
 
     #convert_unix_timestamp(df, 'user_created')
-
-
-    # Countries dummies ('US' as baseline)
-    df = add_dummies(df, 'country', 'US')
-    # Currency dummies ('USD' as baseline)
-    df = add_dummies(df, 'currency', 'USD')
-    if 'GBP' not in df:
+        
+    # Currency dummies ('GBP' is the only feature used in the model)
+    try: 
+        if df['currency'] == 'GBP': 
+            df['GBP'] = 1
+        else: 
+            df['GBP'] = 0
+    except: 
         df['GBP'] = 0
+
     # Payouts dummies ('ACH' as baseline)
-    df = add_dummies(df, 'payout_type', 'ACH')
-    if 'CHECK' not in df:
-        df['CHECK'] = 0
-    if 'BLANK' not in df:
+    try: 
+        if df['payout_type'] == '':
+            df['BLANK'] = 1
+        else: 
+            df['BLANK'] = 0
+    except: 
         df['BLANK'] = 0
 
     #featurizing strings as 'length'
