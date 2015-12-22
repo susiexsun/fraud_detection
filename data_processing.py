@@ -1,19 +1,19 @@
 import pandas as pd
 import numpy as np
-import matplotlib.pyplot as plt
-from sklearn.ensemble import RandomForestClassifier, GradientBoostingClassifier
-from sklearn.cross_validation import KFold, train_test_split
-from sklearn.metrics import accuracy_score, confusion_matrix, roc_curve
-from sklearn.feature_extraction.text import TfidfVectorizer
-from nltk.stem import WordNetLemmatizer
-from sklearn.metrics.pairwise import pairwise_distances
-from sklearn.metrics.pairwise import cosine_similarity
+# import matplotlib.pyplot as plt
+# from sklearn.ensemble import RandomForestClassifier, GradientBoostingClassifier
+# from sklearn.cross_validation import KFold, train_test_split
+# from sklearn.metrics import accuracy_score, confusion_matrix, roc_curve
+# from sklearn.feature_extraction.text import TfidfVectorizer
+# from nltk.stem import WordNetLemmatizer
+# from sklearn.metrics.pairwise import pairwise_distances
+# from sklearn.metrics.pairwise import cosine_similarity
 from difflib import SequenceMatcher as SM
-from sklearn.linear_model import LogisticRegression
-from sklearn.preprocessing import scale
-from sklearn.svm import SVC
-from sklearn.grid_search import GridSearchCV
-from sklearn.neighbors import KNeighborsClassifier
+# from sklearn.linear_model import LogisticRegression
+# from sklearn.preprocessing import scale
+# from sklearn.svm import SVC
+# from sklearn.grid_search import GridSearchCV
+# from sklearn.neighbors import KNeighborsClassifier
 import datetime
 
 # Taken from the pickled random forest model feature importance
