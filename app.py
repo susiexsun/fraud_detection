@@ -42,6 +42,7 @@ def graph(high, med, low):
 
 @app.route('/high_risk')
 def high_risk():
+	# Look into div='accordian' (Bootstrap) for foldout tables
 	high = tab.find({'fraud_prob': {'$gt': 0.5}})
 	df = pd.DataFrame(list(high))
 	return '<link href="static/css/css_table.css" rel="stylesheet">' + df.to_html(classes="CSSTableGenerator")
