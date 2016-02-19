@@ -1,13 +1,14 @@
-# fraud_detection
-End-to-end model and dashboard
 
-## Context
+# Context
 
-We built a fraud detection model for a hypothetical ecommerce company. The goal was to flag fraudulent accounts based on user attributes and activity. 
+The goal was to build a fraud detection model for a hypothetical ecommerce company.
 
-The deliverables were: 
-- Create model that minimizes false negatives
-- Create flask app with documented API
-- Build interactive front-end dashboard
+### The Data: 
+- Static user attributes (Org Name, Org Description, etc)
+- User activity
+
+### The Deliverables: 
+- Model that minimizes false negatives
+- Flask app and interactive front-end dashboard
 
 This project was built over 48 hours as a collaboration between myself and Kevin Lee (kmlee17). 
