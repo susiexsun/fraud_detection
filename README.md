@@ -25,15 +25,15 @@ Two key tools <b>feature selection</b>:
 ![Fraud Hist](http://s16.postimg.org/aatvh098l/hist_fraud.jpg)
 - Feature importance graph
 
+<b>Class Imbalance</b>. There were far more 0 (non-frauds) than 1 (frauds). We used the smoting method to rebalance the classes. 
+
 <b>Feature Engineering</b> is very important due to data with timestamps and free text. Below is a chart of the features engineered.
 
 ![](http://s29.postimg.org/63gx2h7hj/feature_engineering.jpg)
 
 # The Model
 
-<b>Class Imbalance</b>. There were far more 0 (non-frauds) than 1 (frauds). We used the smoting method to rebalance the classes. 
-
-We tested multiple models, and Gradient Boosted Classifier worked the best. 
+We tested multiple models, and <b>Gradient Boosted Classifier</b> worked the best. 
 
 ![](http://s8.postimg.org/ja8zbqq2d/models.jpg)
 
