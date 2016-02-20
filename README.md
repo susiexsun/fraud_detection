@@ -5,7 +5,7 @@ Build a fraud detection model for a hypothetical ecommerce company.
 
 #### The Data: 
 - ~15k rows of static user attributes (org name, org description, etc) in JSON
-- Log of user activity (account creation timestamp, sale timestamps, etc) nested within the same file
+- Log of user activity (account creation timestamps, sale timestamps, etc) nested within the same file
 
 #### The Deliverables: 
 - Model that minimizes false negatives
@@ -20,9 +20,10 @@ EDA was conducted in iPython Notebook (aka Jupyter Notebook) and can be found in
 
 Two key tools <b>feature selection</b>: 
 - Histograms of fraud and non-fraud accounts
-![Not Fraud Hist](http://s15.postimg.org/4kksb62cr/hist_not_fraud.jpg)
+- Feature importance graph
+
+![Not Fraud Hist](http://s10.postimg.org/gvo4mu94p/hist_not_fraud.jpg  = 150 x 150)
 ![Fraud Hist](http://s16.postimg.org/aatvh098l/hist_fraud.jpg)
-- Feature importance analysis. (Obtained from Random Forest Model)
 
 <b>Feature Engineering</b> is very important due to: 
 - Free Text
