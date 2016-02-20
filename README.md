@@ -18,11 +18,16 @@ This project was built over 48 hours as a collaboration between myself and Kevin
 After extensive EDA, we carved out a subset of features.  
 EDA was conducted in iPython Notebook (aka Jupyter Notebook) and can be found in data/pair.ipynb
 
-Two key charts for feature selection: 
+Two key tools <b>feature selection</b>: 
 - Histograms of fraud and non-fraud accounts
 - Feature importance graph
 
-Feature Engineering is very important to this model, since there was a lot of free text and timestamps.
+![Not Fraud Hist](http://s23.postimg.org/sagaarre3/hist_not_fraud.jpg)
+![Fraud Hist](http://s28.postimg.org/512xaub99/hist_fraud.jpg)
+
+<b>Feature Engineering</b> is very important due to: 
+- Free Text
+- Timestamps
 
 
 # The Dashboard
