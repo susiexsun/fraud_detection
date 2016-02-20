@@ -25,10 +25,15 @@ Two key tools <b>feature selection</b>:
 ![Fraud Hist](http://s16.postimg.org/aatvh098l/hist_fraud.jpg)
 - Feature importance graph
 
-<b>Feature Engineering</b> is very important due to data with timestamps and free text. Below is a chart of the features engineered and which were large contributors. 
+<b>Feature Engineering</b> is very important due to data with timestamps and free text. Below is a chart of the features engineered.
 
 ![](http://s13.postimg.org/lyipyuvt3/feature_engineering.jpg)
 
 # The Model
+
+* Class Imbalance * 
+We used smote to re-balance the classes, as there were far more 0 (non-frauds) than 1 (frauds)
+
+We tested multiple models, and Gradient Boosted Classifier worked the best. 
 
 
