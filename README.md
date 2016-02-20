@@ -9,14 +9,13 @@ Build a fraud detection model for a hypothetical ecommerce company.
 
 #### The Deliverables: 
 - Model that minimizes false negatives
-- Interactive front-end dashboard
+- Interactive front-end dashboard that receives and classifies a live stream of data
 
 This project was built over 48 hours as a collaboration between myself and Kevin Lee (kmlee17). 
 
 # The Features
 
 After extensive EDA, we carved out a subset of features.  
-EDA was conducted in iPython Notebook (aka Jupyter Notebook) and can be found in data/pair.ipynb
 
 Two key tools <b>feature selection</b>: 
 - Histograms of fraud (left) and non-fraud accounts (right)
@@ -39,4 +38,8 @@ We tested multiple models, and <b>Gradient Boosted Classifier</b> worked the bes
 
 # The Dashboard
 
+We created an interactive dashboard of the accounts / transactions. We graded those as High, Medium, and Low (or No) Risk. 
 
+![](http://s14.postimg.org/n182vt9kh/dashboard.jpg)
+
+Our model was great at classifying appropriately. It had a high recall and did not overload the system with false positives. 
