@@ -22,8 +22,8 @@ Two key tools <b>feature selection</b>:
 - Histograms of fraud and non-fraud accounts
 - Feature importance graph
 
-![Not Fraud Hist](http://s23.postimg.org/sagaarre3/hist_not_fraud.jpg)
-![Fraud Hist](http://s28.postimg.org/512xaub99/hist_fraud.jpg)
+![Not Fraud Hist](http://s10.postimg.org/gvo4mu94p/hist_not_fraud.jpg)
+![Fraud Hist](http://s16.postimg.org/aatvh098l/hist_fraud.jpg)
 
 <b>Feature Engineering</b> is very important due to: 
 - Free Text
