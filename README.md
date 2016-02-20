@@ -33,7 +33,7 @@ Two key tools <b>feature selection</b>:
 
 # The Model
 
-We tested multiple models, and <b>Gradient Boosted Classifier</b> worked the best. 
+We tested multiple models, and <b>Gradient Boosted Classifier</b> worked the best based on 5 fold cross validation.
 
 ![](http://s8.postimg.org/ja8zbqq2d/models.jpg)
 
