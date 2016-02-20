@@ -20,10 +20,11 @@ EDA was conducted in iPython Notebook (aka Jupyter Notebook) and can be found in
 
 Two key tools <b>feature selection</b>: 
 - Histograms of fraud and non-fraud accounts
-- Feature importance graph
-
 ![Not Fraud Hist](http://s10.postimg.org/gvo4mu94p/hist_not_fraud.jpg  = 150 x 150)
+* Histogram of Fraud Accounts * 
 ![Fraud Hist](http://s16.postimg.org/aatvh098l/hist_fraud.jpg)
+* Histogram of Non-Fraud Accounts * 
+- Feature importance graph
 
 <b>Feature Engineering</b> is very important due to: 
 - Free Text
