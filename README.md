@@ -31,11 +31,12 @@ Two key tools <b>feature selection</b>:
 
 # The Model
 
-* Class Imbalance * 
-We used smote to re-balance the classes, as there were far more 0 (non-frauds) than 1 (frauds)
+<b>Class Imbalance</b>. There were far more 0 (non-frauds) than 1 (frauds). We used the smoting method to rebalance the classes. 
 
 We tested multiple models, and Gradient Boosted Classifier worked the best. 
 
 ![](http://s8.postimg.org/ja8zbqq2d/models.jpg)
+
+# The Dashboard
 
 
