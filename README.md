@@ -45,3 +45,4 @@ We created an interactive dashboard of the accounts / transactions. We graded th
 Our model was great - it had a high recall and did not overload the system with false positives. 
 
 # Repo Structure
+![](http://s30.postimg.org/wwyrxnxzl/repo_structure.jpg)
