@@ -1,7 +1,7 @@
 
 # Goal
 
-Build a fraud detection model for a hypothetical ecommerce company.
+Build a fraud detection model for an ecommerce company.
 
 #### The Data: 
 - ~15k rows of static user attributes (org name, org description, etc) in JSON
