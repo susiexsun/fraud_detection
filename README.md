@@ -3,9 +3,9 @@
 
 Build a fraud detection model for a hypothetical ecommerce company.
 
-#### The Data (JSON files): 
-- ~15k rows of static user attributes (org name, org description, etc)
-- Log of user activity (account creation timestamps, sale timestamps, etc) 
+#### The Data: 
+- ~15k rows of static user attributes (org name, org description, etc) in JSON
+- Log of user activity (account creation timestamps, sale timestamps, etc) nested within the same file
 
 #### The Deliverables: 
 - Model that minimizes false negatives
