@@ -42,4 +42,4 @@ We created an interactive dashboard of the accounts / transactions. We graded th
 
 ![](http://s14.postimg.org/n182vt9kh/dashboard.jpg)
 
-Our model was great at classifying appropriately. It had a high recall and did not overload the system with false positives. 
+Our model was great - it had a high recall and did not overload the system with false positives. 
