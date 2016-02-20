@@ -27,7 +27,7 @@ Two key tools <b>feature selection</b>:
 
 <b>Feature Engineering</b> is very important due to data with timestamps and free text. Below is a chart of the features engineered.
 
-![](http://s13.postimg.org/lyipyuvt3/feature_engineering.jpg)
+![](http://s29.postimg.org/63gx2h7hj/feature_engineering.jpg)
 
 # The Model
 
@@ -35,5 +35,7 @@ Two key tools <b>feature selection</b>:
 We used smote to re-balance the classes, as there were far more 0 (non-frauds) than 1 (frauds)
 
 We tested multiple models, and Gradient Boosted Classifier worked the best. 
+
+![](http://s8.postimg.org/ja8zbqq2d/models.jpg)
 
 
