@@ -20,6 +20,7 @@ EDA was conducted in iPython Notebook (aka Jupyter Notebook) and can be found in
 
 Two key tools <b>feature selection</b>: 
 - Histograms of fraud (left) and non-fraud accounts (right)
+
 ![Not Fraud Hist](http://s10.postimg.org/gvo4mu94p/hist_not_fraud.jpg  = 150 x 150)
 ![Fraud Hist](http://s16.postimg.org/aatvh098l/hist_fraud.jpg)
 - Feature importance graph
