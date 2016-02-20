@@ -25,10 +25,9 @@ Two key tools <b>feature selection</b>:
 ![Fraud Hist](http://s16.postimg.org/aatvh098l/hist_fraud.jpg)
 - Feature importance graph
 
-<b>Feature Engineering</b> is very important due to: 
-- Free Text
-- Timestamps
+<b>Feature Engineering</b> is very important due to data with timestamps and free text. Below is a chart of the features engineered and which were large contributors. 
 
+![](http://s13.postimg.org/lyipyuvt3/feature_engineering.jpg)
 
 # The Model
 
