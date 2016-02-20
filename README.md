@@ -9,7 +9,7 @@ Build a fraud detection model for a hypothetical ecommerce company.
 
 #### The Deliverables: 
 - Model that minimizes false negatives
-- Flask app and interactive front-end dashboard
+- Interactive front-end dashboard
 
 This project was built over 48 hours as a collaboration between myself and Kevin Lee (kmlee17). 
 
@@ -30,6 +30,6 @@ Two key tools <b>feature selection</b>:
 - Timestamps
 
 
-# The Dashboard
+# The Model
 
 
