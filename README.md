@@ -15,14 +15,16 @@ This project was built over 48 hours as a collaboration between myself and Kevin
 
 # The Features
 
-After extensive EDA, we carved out a subset of features.  
+After extensive EDA, we carved out a subset of features that we found to be key determinants of frauds. We kept the feature set small to reduce complexity and prevent over-fitting. 
 
-Two key tools <b>feature selection</b>: 
+We found two key visualizations to be important for <b>feature selection</b>: 
 - Histograms of fraud (left) and non-fraud accounts (right)
 
 ![Not Fraud Hist](http://s10.postimg.org/gvo4mu94p/hist_not_fraud.jpg  = 150 x 150)
 ![Fraud Hist](http://s16.postimg.org/aatvh098l/hist_fraud.jpg)
 - Feature importance graph
+
+![](http://s13.postimg.org/b3f29s49j/Fraud_Detection_pptx.jpg)
 
 <b>Class Imbalance</b>. There were far more 0 (non-frauds) than 1 (frauds). We used the smoting method to rebalance the classes. 
 
