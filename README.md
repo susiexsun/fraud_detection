@@ -1,7 +1,7 @@
 
 # Goal
 
-Build a fraud detection model for an ecommerce company.
+Build a fraud detection model for an ecommerce company, with a front-end dashboard that receives and classifies a live stream of data.
 
 This project was built over 48 hours as a collaboration between myself and Kevin Lee (kmlee17). 
 
@@ -10,8 +10,8 @@ This project was built over 48 hours as a collaboration between myself and Kevin
 - Log of user activity (account creation timestamps, sale timestamps, etc) nested within the same file
 
 #### The Deliverables: 
-- Model that minimizes false negatives
-- Interactive front-end dashboard that receives and classifies a live stream of data
+- Machine learning model that minimizes false negatives
+- Interactive front-end dashboard
 
 # The Features
 
