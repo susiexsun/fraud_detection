@@ -3,6 +3,8 @@
 
 Build a fraud detection model for an ecommerce company.
 
+This project was built over 48 hours as a collaboration between myself and Kevin Lee (kmlee17). 
+
 #### The Data: 
 - ~15k rows of static user attributes (org name, org description, etc) in JSON
 - Log of user activity (account creation timestamps, sale timestamps, etc) nested within the same file
@@ -10,8 +12,6 @@ Build a fraud detection model for an ecommerce company.
 #### The Deliverables: 
 - Model that minimizes false negatives
 - Interactive front-end dashboard that receives and classifies a live stream of data
-
-This project was built over 48 hours as a collaboration between myself and Kevin Lee (kmlee17). 
 
 # The Features
 
